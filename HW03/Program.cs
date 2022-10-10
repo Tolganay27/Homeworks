@@ -8,26 +8,31 @@
 
 23432 -> да */
 
-int newnum = 0;
+/*
+int x = 0;
 Console.Write("Введите пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int i = num;
+int num2 = 0;
+int newnum = 0;
 
 while (i > 0)
 {
-    newnum = i % 10;
-    Console.Write(newnum);
+    x = i % 10;
+    Console.Write(x);
+    num2 = num2 * 10 + x;
     i = i / 10;
 }
+newnum = num2;
 if (newnum == num) 
 {
-    Console.Write("Число является палиндромом");
+    Console.Write(" Число является палиндромом");
 }
 else
 {
-    Console.Write("Число НЕ является палиндромом");
+    Console.Write(" Число НЕ является палиндромом");
 }
-
+*/
 
 
 
@@ -40,6 +45,7 @@ A (3,6,8); B (2,1,-7), -> 15.84
 
 A (7,-5, 0); B (1,-1,9) -> 11.53 
 */
+
 
 /*
 int[] array = new int[3];
@@ -63,17 +69,19 @@ while (j < 3)
 }
 
 
-x1 = point2[0];
-y1 = point1[0];
-x2 = point2[1];
-y2 = point1[1];
-x3 = point2[2];
-y3 = point1[2];
+double x1 = point2[0];
+double y1 = point1[0];
+double x2 = point2[1];
+double y2 = point1[1];
+double x3 = point2[2];
+double y3 = point1[2];
 
-
-double sum = Math.Sqrt(double d);
-double a= (double Math.Pow(x1 - y1) + double Math.Pow(double x2, double y2)+ double Math.Pow(double x3, double y3));
+double distance = Math.Sqrt(Math.Pow(x1 - y1, 2) + Math.Pow(x2 - y2, 2) + Math.Pow(x3 - y3, 2));
+Console.Write($"Расстояние между двумя точками: {distance}");
 */
+
+
+
 
 
 /*
