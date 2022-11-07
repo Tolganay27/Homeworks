@@ -74,7 +74,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        if (i` == num)
+        if (array[i, j] == num)
         {
             message = "такое число в массиве есть";
         }
@@ -128,18 +128,16 @@ double sum2 = 0;
 
 
 
-for (int i = 0; i < array.GetLength(0); i++)
+for (int j = 0; j < array.GetLength(1); j++)
 {
-    for (int j = 0; j < array.GetLength(1); j++)
+    sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        if (j == 0)
-        {
-            sum += array[i, j];
-        }
-        sum2 = sum / m;
+        sum += array[i, j];
     }
+    sum2 = sum / m;
+    Console.Write($"{sum2:F1} ");
 }
-Console.Write($"{sum2:F1}");
 */
 // в задаче 52 смогла вывести лишь среднее арифметическое первого столбца, попыталась другие столбцы вывести, белиберда пошла :/ 
 
